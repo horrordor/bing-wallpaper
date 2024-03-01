@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-language" content="zh-cn">
+    <meta name="keywords" content="必应壁纸,必应美图,Bing壁纸,bing,壁纸,高清壁纸,微软壁纸,必应官方壁纸,必应首页壁纸,必应每日壁纸,壁纸下载" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name='description' content='{{title}}'>
+    <title>{{title}}</title>
+
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/horrordor/bing-wallpaper/static/css/wallpaper.css">
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/horrordor/bing-wallpaper/static/css/loader.css">
+
+    <script src="https://cdn.staticfile.org/jquery/3.7.0/jquery.slim.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/gh/horrordor/bing-wallpaper/static/js/download.js"></script>
+
+    <link rel="icon" href="https://fastly.jsdelivr.net/gh/horrordor/bing-wallpaper/favicon.ico" type ="image/x-icon">
+</head>
+
+<body>
+    <div class="loader">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <section class="main">
+        <div class="img_body" style="background-image: url({{pic}});min-height: 100vh;">
+            <div class="nav">
+                <div class="nav_left"> 
+                    <a class="btn" href="{{back}}">返回</a> 
+                </div>
+                <div class="nav_right"> 
+                    <a class="btn" href="{{pre}}">上一张</a> 
+                    <a class="btn" href="{{next}}">下一张</a> 
+                    <a class="btn" href = "javascript:void(0);" title="{{pic}}" onclick="downloadUrlFile(this.title)" id="download">下载</a> 
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="description">
+                    <div class="img_title">
+                    {{title}} {{date}}
+                    </div>
+                    <pre id="img_story"></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://fastly.jsdelivr.net/gh/horrordor/bing-wallpaper/static/js/debugger.js"></script>
+    <script src="https://fastly.jsdelivr.net/gh/horrordor/bing-wallpaper/static/js/loader.js"></script>
+</body>
+
+</html>
