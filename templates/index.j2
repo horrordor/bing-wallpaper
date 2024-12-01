@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="horrordor">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <meta content="telephone=no,email=no" name="format-detection">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,Chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="keywords" content="壁纸,必应壁纸,必应每日壁纸下载,Bing壁纸,Bing高清壁纸,微软Bing每日壁纸,必应每日壁纸下载,高清壁纸,高清壁纸分享,必应高清壁纸,必应壁纸打包下载">
+    <meta name='description' content='壁纸,必应壁纸,必应每日壁纸下载,Bing壁纸,Bing高清壁纸,微软Bing每日壁纸,必应每日壁纸下载,高清壁纸,高清壁纸分享,必应高清壁纸,必应壁纸打包下载'>
+
+    <title>必应每日壁纸</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/horrordor/bing-wallpaper/static/css/main.css">
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/horrordor/bing-wallpaper/static/css/common.css">
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/horrordor/bing-wallpaper/static/css/iconfont.css">
+
+    <link rel="stylesheet" href="https://cdn.staticfile.org/weui/2.6.5/style/weui.min.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/progressively/1.2.5/progressively.min.css">
+
+    <script src="https://fastly.jsdelivr.net/gh/horrordor/bing-wallpaper/static/js/device.js"></script>
+    <script src="https://fastly.jsdelivr.net/gh/horrordor/bing-wallpaper/static/js/download.js"></script>
+
+    <script src="https://cdn.staticfile.org/jquery/3.7.0/jquery.slim.min.js"></script>
+    <script src="https://cdn.staticfile.org/progressively/1.2.5/progressively.min.js"></script>
+
+    <script>
+        if (!!window.ActiveXObject || "ActiveXObject" in window) {
+            //is IE?
+            alert('朋友，IE浏览器未适配哦~\n如果是 360、QQ 等双核浏览器，请关闭 IE 模式！');
+        }
+    </script>
+
+    <link rel="icon" href="https://fastly.jsdelivr.net/gh/horrordor/bing-wallpaper/favicon.ico" type ="image/x-icon">
+
+    {% if statement %}
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/horrordor/bing-wallpaper/static/css/loader.css">
+    {% endif %}
+</head>
+
+<body oncontextmenu="self.event.returnValue=false">
+    {% if statement %}
+    <div class="loader">
+        <span></span><span></span><span></span>
+        <h1 style="display:none;">必应每日壁纸</h1>
+    </div>
+    <section class="main">
+        {% endif %}
+        <header>
+            <div class="container">
+                <div style="text-align: center;">
+                    <a class="logo" href="/"> <i class="icon icon-bing"></i><span>必应壁纸</span></a>
+                    <nav>
+                        <ul class="menu">
+                            <li class="active"><a href="/"><i class="icon icon-home"></i>
+                                    <p class="text">首页</p>
+                                </a></li>
+                            <li><a data-no-instant href="/about.html"><i class="icon icon-about"></i>
+                                    <p class="text">关于</p>
+                                </a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="holder"></div>
+        <div class="mask"></div>
+        <div class="container">
+            {% for item in items %}
+            <div class="item">
+                <div class="card progressive">
+                    <img class="progressive__img progressive--not-loaded" data-progressive="{{item['pic_480p']}}"
+                        src="{{item['thumbnail']}}" alt="{{item['title']}}">
+                    <a class="mark" href="{{item['page']}}"></a>
+                    <div class="description" style="text-align:left">
+                        <h3>{{item['title']}}</h3>
+                        <p class="calendar"><i class="icon icon-calendar"></i><em class="t">{{item['date']}}</em></p>
+                    </div>
+                    <div class="options">
+                        <a class="ctrl download" href="javascript:void(0);" title="{{item['pic_1080p']}}" onclick="downloadUrlFile(this.title)" id="download">
+                            <i class="icon icon-download"></i><em class="t">1920x1080</em>
+                        </a>
+                        <a class="ctrl download" href="javascript:void(0);" title="{{item['pic_uhd']}}" onclick="downloadUrlFile(this.title)" id="download">
+                            <i class="icon icon-download"></i><em class="t">UHD</em>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+        <div class="page"><a href="{{pre}}">上一页</a><span> {{index}} / {{count}} </span><a href="{{next}}">下一页</a></div>
+
+        <div class="copyright">
+            <p>本站所有图片均来自<a rel="nofollow" href="http://cn.bing.com" target="_blank">必应搜索</a></p>
+            <p>Copyright &copy;
+                <a href="https://blog.horrordor.tk/" target="_blank">horrordor</a>
+            </p>
+        </div>
+        {% if statement %}
+    </section>
+
+    <script src="https://fastly.jsdelivr.net/gh/horrordor/bing-wallpaper/static/js/loader.js"></script>
+    {% endif %}
+
+    <script>
+        progressively.init({
+            delay: 50,
+            throttle: 300,
+            smBreakpoint: 600,
+            onLoad: function (elem) {
+                console.log(elem);
+            },
+            onLoadComplete: function () {
+                console.log('All images have finished loading!');
+            }
+        });
+    </script>
+</body>
+
+</html>
