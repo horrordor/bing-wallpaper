@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="horrordor">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <meta content="telephone=no,email=no" name="format-detection">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,Chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="keywords" content="壁纸,必应壁纸,必应每日壁纸下载,Bing壁纸,Bing高清壁纸,微软Bing每日壁纸,必应每日壁纸下载,高清壁纸,高清壁纸分享,必应高清壁纸,必应壁纸打包下载">
+    <meta name='description' content='壁纸,必应壁纸,必应每日壁纸下载,Bing壁纸,Bing高清壁纸,微软Bing每日壁纸,必应每日壁纸下载,高清壁纸,高清壁纸分享,必应高清壁纸,必应壁纸打包下载'>
+
+    <title>必应每日壁纸</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/horrordor/bing-wallpaper/static/css/main.css">
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/horrordor/bing-wallpaper/static/css/common.css">
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/horrordor/bing-wallpaper/static/css/iconfont.css">
+
+    <link rel="stylesheet" href="https://cdn.staticfile.org/weui/2.6.5/style/weui.min.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/progressively/1.2.5/progressively.min.css">
+
+    <script src="https://fastly.jsdelivr.net/gh/horrordor/bing-wallpaper/static/js/device.js"></script>
+    <script src="https://fastly.jsdelivr.net/gh/horrordor/bing-wallpaper/static/js/download.js"></script>
+
+    <script src="https://cdn.staticfile.org/jquery/3.7.0/jquery.slim.min.js"></script>
+    <script src="https://cdn.staticfile.org/progressively/1.2.5/progressively.min.js"></script>
+
+    <script>
+        if (!!window.ActiveXObject || "ActiveXObject" in window) {
+            //is IE?
+            alert('朋友，IE浏览器未适配哦~\n如果是 360、QQ 等双核浏览器，请关闭 IE 模式！');
+        }
+    </script>
+
+    <link rel="icon" href="https://fastly.jsdelivr.net/gh/horrordor/bing-wallpaper/favicon.ico" type ="image/x-icon">
+
+    
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/horrordor/bing-wallpaper/static/css/loader.css">
+    
+</head>
+
+<body oncontextmenu="self.event.returnValue=false">
+    
+    <div class="loader">
+        <span></span><span></span><span></span>
+        <h1 style="display:none;">必应每日壁纸</h1>
+    </div>
+    <section class="main">
+        
+        <header>
+            <div class="container">
+                <div style="text-align: center;">
+                    <a class="logo" href="/"> <i class="icon icon-bing"></i><span>必应壁纸</span></a>
+                    <nav>
+                        <ul class="menu">
+                            <li class="active"><a href="/"><i class="icon icon-home"></i>
+                                    <p class="text">首页</p>
+                                </a></li>
+                            <li><a data-no-instant href="/about.html"><i class="icon icon-about"></i>
+                                    <p class="text">关于</p>
+                                </a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="holder"></div>
+        <div class="mask"></div>
+        <div class="container">
+            
+            <div class="item">
+                <div class="card progressive">
+                    <img class="progressive__img progressive--not-loaded" data-progressive="https://bing.com/th?id=OHR.GreatRidge_ZH-CN6165605288_800x480.jpg"
+                        src="https://bing.com/th?id=OHR.GreatRidge_ZH-CN6165605288_400x240.jpg" alt="大脊山，英格兰峰区国家公园 (© John Finney Photography/Moment/Getty Images)">
+                    <a class="mark" href="/pages/OHR.GreatRidge_ZH-CN6165605288.html"></a>
+                    <div class="description" style="text-align:left">
+                        <h3>大脊山，英格兰峰区国家公园 (© John Finney Photography/Moment/Getty Images)</h3>
+                        <p class="calendar"><i class="icon icon-calendar"></i><em class="t">2022-04-30</em></p>
+                    </div>
+                    <div class="options">
+                        <a class="ctrl download" href="javascript:void(0);" title="https://bing.com/th?id=OHR.GreatRidge_ZH-CN6165605288_1920x1080.jpg" onclick="downloadUrlFile(this.title)" id="download">
+                            <i class="icon icon-download"></i><em class="t">1920x1080</em>
+                        </a>
+                        <a class="ctrl download" href="javascript:void(0);" title="https://bing.com/th?id=OHR.GreatRidge_ZH-CN6165605288_UHD.jpg" onclick="downloadUrlFile(this.title)" id="download">
+                            <i class="icon icon-download"></i><em class="t">UHD</em>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="item">
+                <div class="card progressive">
+                    <img class="progressive__img progressive--not-loaded" data-progressive="https://bing.com/th?id=OHR.SvalbardSun_ZH-CN6108396467_800x480.jpg"
+                        src="https://bing.com/th?id=OHR.SvalbardSun_ZH-CN6108396467_400x240.jpg" alt="午夜的太阳，挪威斯瓦尔巴群岛 (© Nature Picture Library/Alamy)">
+                    <a class="mark" href="/pages/OHR.SvalbardSun_ZH-CN6108396467.html"></a>
+                    <div class="description" style="text-align:left">
+                        <h3>午夜的太阳，挪威斯瓦尔巴群岛 (© Nature Picture Library/Alamy)</h3>
+                        <p class="calendar"><i class="icon icon-calendar"></i><em class="t">2022-04-29</em></p>
+                    </div>
+                    <div class="options">
+                        <a class="ctrl download" href="javascript:void(0);" title="https://bing.com/th?id=OHR.SvalbardSun_ZH-CN6108396467_1920x1080.jpg" onclick="downloadUrlFile(this.title)" id="download">
+                            <i class="icon icon-download"></i><em class="t">1920x1080</em>
+                        </a>
+                        <a class="ctrl download" href="javascript:void(0);" title="https://bing.com/th?id=OHR.SvalbardSun_ZH-CN6108396467_UHD.jpg" onclick="downloadUrlFile(this.title)" id="download">
+                            <i class="icon icon-download"></i><em class="t">UHD</em>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="item">
+                <div class="card progressive">
+                    <img class="progressive__img progressive--not-loaded" data-progressive="https://bing.com/th?id=OHR.Hunebourg_ZH-CN6038786751_800x480.jpg"
+                        src="https://bing.com/th?id=OHR.Hunebourg_ZH-CN6038786751_400x240.jpg" alt="下莱茵省的胡内城堡，法国阿尔萨斯大区 (© Leonid Andronov/Alamy)">
+                    <a class="mark" href="/pages/OHR.Hunebourg_ZH-CN6038786751.html"></a>
+                    <div class="description" style="text-align:left">
+                        <h3>下莱茵省的胡内城堡，法国阿尔萨斯大区 (© Leonid Andronov/Alamy)</h3>
+                        <p class="calendar"><i class="icon icon-calendar"></i><em class="t">2022-04-28</em></p>
+                    </div>
+                    <div class="options">
+                        <a class="ctrl download" href="javascript:void(0);" title="https://bing.com/th?id=OHR.Hunebourg_ZH-CN6038786751_1920x1080.jpg" onclick="downloadUrlFile(this.title)" id="download">
+                            <i class="icon icon-download"></i><em class="t">1920x1080</em>
+                        </a>
+                        <a class="ctrl download" href="javascript:void(0);" title="https://bing.com/th?id=OHR.Hunebourg_ZH-CN6038786751_UHD.jpg" onclick="downloadUrlFile(this.title)" id="download">
+                            <i class="icon icon-download"></i><em class="t">UHD</em>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="item">
+                <div class="card progressive">
+                    <img class="progressive__img progressive--not-loaded" data-progressive="https://bing.com/th?id=OHR.ThreeKings_ZH-CN5954425982_800x480.jpg"
+                        src="https://bing.com/th?id=OHR.ThreeKings_ZH-CN5954425982_400x240.jpg" alt="圣安德鲁斯湾岸边的三只王企鹅，南乔治亚岛 (© Paul Souders/Getty Images)">
+                    <a class="mark" href="/pages/OHR.ThreeKings_ZH-CN5954425982.html"></a>
+                    <div class="description" style="text-align:left">
+                        <h3>圣安德鲁斯湾岸边的三只王企鹅，南乔治亚岛 (© Paul Souders/Getty Images)</h3>
+                        <p class="calendar"><i class="icon icon-calendar"></i><em class="t">2022-04-27</em></p>
+                    </div>
+                    <div class="options">
+                        <a class="ctrl download" href="javascript:void(0);" title="https://bing.com/th?id=OHR.ThreeKings_ZH-CN5954425982_1920x1080.jpg" onclick="downloadUrlFile(this.title)" id="download">
+                            <i class="icon icon-download"></i><em class="t">1920x1080</em>
+                        </a>
+                        <a class="ctrl download" href="javascript:void(0);" title="https://bing.com/th?id=OHR.ThreeKings_ZH-CN5954425982_UHD.jpg" onclick="downloadUrlFile(this.title)" id="download">
+                            <i class="icon icon-download"></i><em class="t">UHD</em>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="item">
+                <div class="card progressive">
+                    <img class="progressive__img progressive--not-loaded" data-progressive="https://bing.com/th?id=OHR.YosemiteNightSky_ZH-CN5864740024_800x480.jpg"
+                        src="https://bing.com/th?id=OHR.YosemiteNightSky_ZH-CN5864740024_400x240.jpg" alt="半穹顶景观点上空的银河，优胜美地国家公园，加利福尼亚州 (© Cory Marshall/Tandem Stills + Motion)">
+                    <a class="mark" href="/pages/OHR.YosemiteNightSky_ZH-CN5864740024.html"></a>
+                    <div class="description" style="text-align:left">
+                        <h3>半穹顶景观点上空的银河，优胜美地国家公园，加利福尼亚州 (© Cory Marshall/Tandem Stills + Motion)</h3>
+                        <p class="calendar"><i class="icon icon-calendar"></i><em class="t">2022-04-26</em></p>
+                    </div>
+                    <div class="options">
+                        <a class="ctrl download" href="javascript:void(0);" title="https://bing.com/th?id=OHR.YosemiteNightSky_ZH-CN5864740024_1920x1080.jpg" onclick="downloadUrlFile(this.title)" id="download">
+                            <i class="icon icon-download"></i><em class="t">1920x1080</em>
+                        </a>
+                        <a class="ctrl download" href="javascript:void(0);" title="https://bing.com/th?id=OHR.YosemiteNightSky_ZH-CN5864740024_UHD.jpg" onclick="downloadUrlFile(this.title)" id="download">
+                            <i class="icon icon-download"></i><em class="t">UHD</em>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="item">
+                <div class="card progressive">
+                    <img class="progressive__img progressive--not-loaded" data-progressive="https://bing.com/th?id=OHR.VictoriaMemorialKolkata_ZH-CN5801450386_800x480.jpg"
+                        src="https://bing.com/th?id=OHR.VictoriaMemorialKolkata_ZH-CN5801450386_400x240.jpg" alt="维多利亚纪念堂，印度加尔各答 (© Roop_Dey/Shutterstock)">
+                    <a class="mark" href="/pages/OHR.VictoriaMemorialKolkata_ZH-CN5801450386.html"></a>
+                    <div class="description" style="text-align:left">
+                        <h3>维多利亚纪念堂，印度加尔各答 (© Roop_Dey/Shutterstock)</h3>
+                        <p class="calendar"><i class="icon icon-calendar"></i><em class="t">2022-04-25</em></p>
+                    </div>
+                    <div class="options">
+                        <a class="ctrl download" href="javascript:void(0);" title="https://bing.com/th?id=OHR.VictoriaMemorialKolkata_ZH-CN5801450386_1920x1080.jpg" onclick="downloadUrlFile(this.title)" id="download">
+                            <i class="icon icon-download"></i><em class="t">1920x1080</em>
+                        </a>
+                        <a class="ctrl download" href="javascript:void(0);" title="https://bing.com/th?id=OHR.VictoriaMemorialKolkata_ZH-CN5801450386_UHD.jpg" onclick="downloadUrlFile(this.title)" id="download">
+                            <i class="icon icon-download"></i><em class="t">UHD</em>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="item">
+                <div class="card progressive">
+                    <img class="progressive__img progressive--not-loaded" data-progressive="https://bing.com/th?id=OHR.EarthDay2022_ZH-CN5733809629_800x480.jpg"
+                        src="https://bing.com/th?id=OHR.EarthDay2022_ZH-CN5733809629_400x240.jpg" alt="卡鲁拉国家公园里的小湖，爱沙尼亚 (© Sven Zacek/Minden Pictures)">
+                    <a class="mark" href="/pages/OHR.EarthDay2022_ZH-CN5733809629.html"></a>
+                    <div class="description" style="text-align:left">
+                        <h3>卡鲁拉国家公园里的小湖，爱沙尼亚 (© Sven Zacek/Minden Pictures)</h3>
+                        <p class="calendar"><i class="icon icon-calendar"></i><em class="t">2022-04-24</em></p>
+                    </div>
+                    <div class="options">
+                        <a class="ctrl download" href="javascript:void(0);" title="https://bing.com/th?id=OHR.EarthDay2022_ZH-CN5733809629_1920x1080.jpg" onclick="downloadUrlFile(this.title)" id="download">
+                            <i class="icon icon-download"></i><em class="t">1920x1080</em>
+                        </a>
+                        <a class="ctrl download" href="javascript:void(0);" title="https://bing.com/th?id=OHR.EarthDay2022_ZH-CN5733809629_UHD.jpg" onclick="downloadUrlFile(this.title)" id="download">
+                            <i class="icon icon-download"></i><em class="t">UHD</em>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="item">
+                <div class="card progressive">
+                    <img class="progressive__img progressive--not-loaded" data-progressive="https://bing.com/th?id=OHR.IcelandicSummer_ZH-CN1779278033_800x480.jpg"
+                        src="https://bing.com/th?id=OHR.IcelandicSummer_ZH-CN1779278033_400x240.jpg" alt="在公路上吃草的绵羊，冰岛 (© Matthew Kuhns/Tandem Stills + Motion)">
+                    <a class="mark" href="/pages/OHR.IcelandicSummer_ZH-CN1779278033.html"></a>
+                    <div class="description" style="text-align:left">
+                        <h3>在公路上吃草的绵羊，冰岛 (© Matthew Kuhns/Tandem Stills + Motion)</h3>
+                        <p class="calendar"><i class="icon icon-calendar"></i><em class="t">2022-04-23</em></p>
+                    </div>
+                    <div class="options">
+                        <a class="ctrl download" href="javascript:void(0);" title="https://bing.com/th?id=OHR.IcelandicSummer_ZH-CN1779278033_1920x1080.jpg" onclick="downloadUrlFile(this.title)" id="download">
+                            <i class="icon icon-download"></i><em class="t">1920x1080</em>
+                        </a>
+                        <a class="ctrl download" href="javascript:void(0);" title="https://bing.com/th?id=OHR.IcelandicSummer_ZH-CN1779278033_UHD.jpg" onclick="downloadUrlFile(this.title)" id="download">
+                            <i class="icon icon-download"></i><em class="t">UHD</em>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="item">
+                <div class="card progressive">
+                    <img class="progressive__img progressive--not-loaded" data-progressive="https://bing.com/th?id=OHR.MuteSwan_ZH-CN1554957153_800x480.jpg"
+                        src="https://bing.com/th?id=OHR.MuteSwan_ZH-CN1554957153_400x240.jpg" alt="两只躲在妈妈尾羽下的疣鼻小天鹅，纽约长岛 (© Vicki Jauron/Getty Images)">
+                    <a class="mark" href="/pages/OHR.MuteSwan_ZH-CN1554957153.html"></a>
+                    <div class="description" style="text-align:left">
+                        <h3>两只躲在妈妈尾羽下的疣鼻小天鹅，纽约长岛 (© Vicki Jauron/Getty Images)</h3>
+                        <p class="calendar"><i class="icon icon-calendar"></i><em class="t">2022-04-22</em></p>
+                    </div>
+                    <div class="options">
+                        <a class="ctrl download" href="javascript:void(0);" title="https://bing.com/th?id=OHR.MuteSwan_ZH-CN1554957153_1920x1080.jpg" onclick="downloadUrlFile(this.title)" id="download">
+                            <i class="icon icon-download"></i><em class="t">1920x1080</em>
+                        </a>
+                        <a class="ctrl download" href="javascript:void(0);" title="https://bing.com/th?id=OHR.MuteSwan_ZH-CN1554957153_UHD.jpg" onclick="downloadUrlFile(this.title)" id="download">
+                            <i class="icon icon-download"></i><em class="t">UHD</em>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="item">
+                <div class="card progressive">
+                    <img class="progressive__img progressive--not-loaded" data-progressive="https://bing.com/th?id=OHR.PlitviceBoardwalk_ZH-CN1370384104_800x480.jpg"
+                        src="https://bing.com/th?id=OHR.PlitviceBoardwalk_ZH-CN1370384104_400x240.jpg" alt="十六湖国家公园，克罗地亚 (© Janne Kahila/Getty Images)">
+                    <a class="mark" href="/pages/OHR.PlitviceBoardwalk_ZH-CN1370384104.html"></a>
+                    <div class="description" style="text-align:left">
+                        <h3>十六湖国家公园，克罗地亚 (© Janne Kahila/Getty Images)</h3>
+                        <p class="calendar"><i class="icon icon-calendar"></i><em class="t">2022-04-21</em></p>
+                    </div>
+                    <div class="options">
+                        <a class="ctrl download" href="javascript:void(0);" title="https://bing.com/th?id=OHR.PlitviceBoardwalk_ZH-CN1370384104_1920x1080.jpg" onclick="downloadUrlFile(this.title)" id="download">
+                            <i class="icon icon-download"></i><em class="t">1920x1080</em>
+                        </a>
+                        <a class="ctrl download" href="javascript:void(0);" title="https://bing.com/th?id=OHR.PlitviceBoardwalk_ZH-CN1370384104_UHD.jpg" onclick="downloadUrlFile(this.title)" id="download">
+                            <i class="icon icon-download"></i><em class="t">UHD</em>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="item">
+                <div class="card progressive">
+                    <img class="progressive__img progressive--not-loaded" data-progressive="https://bing.com/th?id=OHR.SquareTowerHouse_ZH-CN1203640326_800x480.jpg"
+                        src="https://bing.com/th?id=OHR.SquareTowerHouse_ZH-CN1203640326_400x240.jpg" alt="梅萨维德国家公园的方形塔楼，美国科罗拉多州 (© lightphoto/Getty Images)">
+                    <a class="mark" href="/pages/OHR.SquareTowerHouse_ZH-CN1203640326.html"></a>
+                    <div class="description" style="text-align:left">
+                        <h3>梅萨维德国家公园的方形塔楼，美国科罗拉多州 (© lightphoto/Getty Images)</h3>
+                        <p class="calendar"><i class="icon icon-calendar"></i><em class="t">2022-04-20</em></p>
+                    </div>
+                    <div class="options">
+                        <a class="ctrl download" href="javascript:void(0);" title="https://bing.com/th?id=OHR.SquareTowerHouse_ZH-CN1203640326_1920x1080.jpg" onclick="downloadUrlFile(this.title)" id="download">
+                            <i class="icon icon-download"></i><em class="t">1920x1080</em>
+                        </a>
+                        <a class="ctrl download" href="javascript:void(0);" title="https://bing.com/th?id=OHR.SquareTowerHouse_ZH-CN1203640326_UHD.jpg" onclick="downloadUrlFile(this.title)" id="download">
+                            <i class="icon icon-download"></i><em class="t">UHD</em>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="item">
+                <div class="card progressive">
+                    <img class="progressive__img progressive--not-loaded" data-progressive="https://bing.com/th?id=OHR.RobinsEgg_ZH-CN0838507211_800x480.jpg"
+                        src="https://bing.com/th?id=OHR.RobinsEgg_ZH-CN0838507211_400x240.jpg" alt="蓝色的美洲知更鸟蛋，新泽西州 (© Mira/Alamy)">
+                    <a class="mark" href="/pages/OHR.RobinsEgg_ZH-CN0838507211.html"></a>
+                    <div class="description" style="text-align:left">
+                        <h3>蓝色的美洲知更鸟蛋，新泽西州 (© Mira/Alamy)</h3>
+                        <p class="calendar"><i class="icon icon-calendar"></i><em class="t">2022-04-19</em></p>
+                    </div>
+                    <div class="options">
+                        <a class="ctrl download" href="javascript:void(0);" title="https://bing.com/th?id=OHR.RobinsEgg_ZH-CN0838507211_1920x1080.jpg" onclick="downloadUrlFile(this.title)" id="download">
+                            <i class="icon icon-download"></i><em class="t">1920x1080</em>
+                        </a>
+                        <a class="ctrl download" href="javascript:void(0);" title="https://bing.com/th?id=OHR.RobinsEgg_ZH-CN0838507211_UHD.jpg" onclick="downloadUrlFile(this.title)" id="download">
+                            <i class="icon icon-download"></i><em class="t">UHD</em>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="page"><a href="/p/00000083.html">上一页</a><span> 85 / 194 </span><a href="/p/00000085.html">下一页</a></div>
+
+        <div class="copyright">
+            <p>本站所有图片均来自<a rel="nofollow" href="http://cn.bing.com" target="_blank">必应搜索</a></p>
+            <p>本站累计访问量:<span id="finicount_views"></span></p>
+            <p>Copyright &copy;
+                <a href="https://blog.horrordor.tk/" target="_blank">horrordor</a>
+            </p>
+        </div>
+        
+    </section>
+
+    <script src="https://fastly.jsdelivr.net/gh/horrordor/bing-wallpaper/static/js/loader.js"></script>
+    
+
+    <script>
+        progressively.init({
+            delay: 50,
+            throttle: 300,
+            smBreakpoint: 600,
+            onLoad: function (elem) {
+                console.log(elem);
+            },
+            onLoadComplete: function () {
+                console.log('All images have finished loading!');
+            }
+        });
+    </script>
+    <script async src="//finicounter.eu.org/finicounter.js"></script>
+</body>
+
+</html>
