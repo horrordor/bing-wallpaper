@@ -40,10 +40,18 @@
     <link rel="icon" href="https://fastly.jsdelivr.net/gh/horrordor/bing-wallpaper/favicon.ico" type ="image/x-icon">
 
     
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/horrordor/bing-wallpaper/static/css/loader.css">
+    
 </head>
 
 <body oncontextmenu="self.event.returnValue=false">
     
+    <div class="loader">
+        <span></span><span></span><span></span>
+        <h1 style="display:none;">必应每日壁纸</h1>
+    </div>
+    <section class="main">
+        
         <header>
             <div class="container">
                 <div style="text-align: center;">
@@ -64,6 +72,26 @@
         <div class="holder"></div>
         <div class="mask"></div>
         <div class="container">
+            
+            <div class="item">
+                <div class="card progressive">
+                    <img class="progressive__img progressive--not-loaded" data-progressive="https://bing.com/th?id=OHR.SmilingOctopus_EN-AU7303849274_800x480.jpg"
+                        src="https://bing.com/th?id=OHR.SmilingOctopus_EN-AU7303849274_400x240.jpg" alt="无法真正微笑的章鱼 (© blickwinkel/Alamy)">
+                    <a class="mark" href="/pages/OHR.SmilingOctopus_EN-AU7303849274.html"></a>
+                    <div class="description" style="text-align:left">
+                        <h3>无法真正微笑的章鱼 (© blickwinkel/Alamy)</h3>
+                        <p class="calendar"><i class="icon icon-calendar"></i><em class="t">2018-10-11</em></p>
+                    </div>
+                    <div class="options">
+                        <a class="ctrl download" href="javascript:void(0);" title="https://bing.com/th?id=OHR.SmilingOctopus_EN-AU7303849274_1920x1080.jpg" onclick="downloadUrlFile(this.title)" id="download">
+                            <i class="icon icon-download"></i><em class="t">1920x1080</em>
+                        </a>
+                        <a class="ctrl download" href="javascript:void(0);" title="https://bing.com/th?id=OHR.SmilingOctopus_EN-AU7303849274_UHD.jpg" onclick="downloadUrlFile(this.title)" id="download">
+                            <i class="icon icon-download"></i><em class="t">UHD</em>
+                        </a>
+                    </div>
+                </div>
+            </div>
             
             <div class="item">
                 <div class="card progressive">
@@ -285,29 +313,9 @@
                 </div>
             </div>
             
-            <div class="item">
-                <div class="card progressive">
-                    <img class="progressive__img progressive--not-loaded" data-progressive="https://bing.com/th?id=OHR.ShenandoahAutumn_EN-AU11784755049_800x480.jpg"
-                        src="https://bing.com/th?id=OHR.ShenandoahAutumn_EN-AU11784755049_400x240.jpg" alt="位于蓝岭山脉的雪兰多国家公园，美国弗吉尼亚州 (© Rachid Dahnoun/Tandem Stills + Motion)">
-                    <a class="mark" href="/pages/OHR.ShenandoahAutumn_EN-AU11784755049.html"></a>
-                    <div class="description" style="text-align:left">
-                        <h3>位于蓝岭山脉的雪兰多国家公园，美国弗吉尼亚州 (© Rachid Dahnoun/Tandem Stills + Motion)</h3>
-                        <p class="calendar"><i class="icon icon-calendar"></i><em class="t">2018-09-29</em></p>
-                    </div>
-                    <div class="options">
-                        <a class="ctrl download" href="javascript:void(0);" title="https://bing.com/th?id=OHR.ShenandoahAutumn_EN-AU11784755049_1920x1080.jpg" onclick="downloadUrlFile(this.title)" id="download">
-                            <i class="icon icon-download"></i><em class="t">1920x1080</em>
-                        </a>
-                        <a class="ctrl download" href="javascript:void(0);" title="https://bing.com/th?id=OHR.ShenandoahAutumn_EN-AU11784755049_UHD.jpg" onclick="downloadUrlFile(this.title)" id="download">
-                            <i class="icon icon-download"></i><em class="t">UHD</em>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
         </div>
 
-        <div class="page"><a href="/p/00000192.html">上一页</a><span> 194 / 194 </span><a href="javascript:void(0);">下一页</a></div>
+        <div class="page"><a href="/p/00000192.html">上一页</a><span> 194 / 195 </span><a href="/p/00000194.html">下一页</a></div>
 
         <div class="copyright">
             <p>本站所有图片均来自<a rel="nofollow" href="http://cn.bing.com" target="_blank">必应搜索</a></p>
@@ -317,6 +325,10 @@
             </p>
         </div>
         
+    </section>
+
+    <script src="https://fastly.jsdelivr.net/gh/horrordor/bing-wallpaper/static/js/loader.js"></script>
+    
 
     <script>
         progressively.init({
