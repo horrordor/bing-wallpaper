@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="horrordor">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <meta content="telephone=no,email=no" name="format-detection">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,Chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="keywords" content="壁纸,必应壁纸,必应每日壁纸下载,Bing壁纸,Bing高清壁纸,微软Bing每日壁纸,必应每日壁纸下载,高清壁纸,高清壁纸分享,必应高清壁纸,必应壁纸打包下载">
+    <meta name='description' content='壁纸,必应壁纸,必应每日壁纸下载,Bing壁纸,Bing高清壁纸,微软Bing每日壁纸,必应每日壁纸下载,高清壁纸,高清壁纸分享,必应高清壁纸,必应壁纸打包下载'>
+
+    <title>必应每日壁纸</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/horrordor/bing-wallpaper/static/css/main.css">
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/horrordor/bing-wallpaper/static/css/common.css">
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/horrordor/bing-wallpaper/static/css/iconfont.css">
+
+    <link rel="stylesheet" href="https://cdn.staticfile.org/weui/2.6.5/style/weui.min.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/progressively/1.2.5/progressively.min.css">
+
+    <script src="https://fastly.jsdelivr.net/gh/horrordor/bing-wallpaper/static/js/device.js"></script>
+    <script src="https://fastly.jsdelivr.net/gh/horrordor/bing-wallpaper/static/js/download.js"></script>
+
+    <script src="https://cdn.staticfile.org/jquery/3.7.0/jquery.slim.min.js"></script>
+    <script src="https://cdn.staticfile.org/progressively/1.2.5/progressively.min.js"></script>
+
+    <script>
+        if (!!window.ActiveXObject || "ActiveXObject" in window) {
+            //is IE?
+            alert('朋友，IE浏览器未适配哦~\n如果是 360、QQ 等双核浏览器，请关闭 IE 模式！');
+        }
+    </script>
+
+    <link rel="icon" href="https://fastly.jsdelivr.net/gh/horrordor/bing-wallpaper/favicon.ico" type ="image/x-icon">
+
+    
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/horrordor/bing-wallpaper/static/css/loader.css">
+    
+</head>
+
+<body oncontextmenu="self.event.returnValue=false">
+    
+    <div class="loader">
+        <span></span><span></span><span></span>
+        <h1 style="display:none;">必应每日壁纸</h1>
+    </div>
+    <section class="main">
+        
+        <header>
+            <div class="container">
+                <div style="text-align: center;">
+                    <a class="logo" href="/"> <i class="icon icon-bing"></i><span>必应壁纸</span></a>
+                    <nav>
+                        <ul class="menu">
+                            <li class="active"><a href="/"><i class="icon icon-home"></i>
+                                    <p class="text">首页</p>
+                                </a></li>
+                            <li><a data-no-instant href="/about.html"><i class="icon icon-about"></i>
+                                    <p class="text">关于</p>
+                                </a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="holder"></div>
+        <div class="mask"></div>
+        <div class="container">
+            
+            <div class="item">
+                <div class="card progressive">
+                    <img class="progressive__img progressive--not-loaded" data-progressive="https://bing.com/th?id=OHR.BloodyBrook_ZH-CN6505728233_800x480.jpg"
+                        src="https://bing.com/th?id=OHR.BloodyBrook_ZH-CN6505728233_400x240.jpg" alt="横跨康涅狄格河畔血溪的铁路，新罕布什尔州汉诺威 (© DEEPOL by plainpicture)">
+                    <a class="mark" href="/pages/OHR.BloodyBrook_ZH-CN6505728233.html"></a>
+                    <div class="description" style="text-align:left">
+                        <h3>横跨康涅狄格河畔血溪的铁路，新罕布什尔州汉诺威 (© DEEPOL by plainpicture)</h3>
+                        <p class="calendar"><i class="icon icon-calendar"></i><em class="t">2021-01-23</em></p>
+                    </div>
+                    <div class="options">
+                        <a class="ctrl download" href="javascript:void(0);" title="https://bing.com/th?id=OHR.BloodyBrook_ZH-CN6505728233_1920x1080.jpg" onclick="downloadUrlFile(this.title)" id="download">
+                            <i class="icon icon-download"></i><em class="t">1920x1080</em>
+                        </a>
+                        <a class="ctrl download" href="javascript:void(0);" title="https://bing.com/th?id=OHR.BloodyBrook_ZH-CN6505728233_UHD.jpg" onclick="downloadUrlFile(this.title)" id="download">
+                            <i class="icon icon-download"></i><em class="t">UHD</em>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="item">
+                <div class="card progressive">
+                    <img class="progressive__img progressive--not-loaded" data-progressive="https://bing.com/th?id=OHR.RSOakTree_ZH-CN6371993573_800x480.jpg"
+                        src="https://bing.com/th?id=OHR.RSOakTree_ZH-CN6371993573_400x240.jpg" alt="苏格兰高地上的欧亚红松鼠，苏格兰 (© Scotland: The Big Picture/Minden Pictures)">
+                    <a class="mark" href="/pages/OHR.RSOakTree_ZH-CN6371993573.html"></a>
+                    <div class="description" style="text-align:left">
+                        <h3>苏格兰高地上的欧亚红松鼠，苏格兰 (© Scotland: The Big Picture/Minden Pictures)</h3>
+                        <p class="calendar"><i class="icon icon-calendar"></i><em class="t">2021-01-22</em></p>
+                    </div>
+                    <div class="options">
+                        <a class="ctrl download" href="javascript:void(0);" title="https://bing.com/th?id=OHR.RSOakTree_ZH-CN6371993573_1920x1080.jpg" onclick="downloadUrlFile(this.title)" id="download">
+                            <i class="icon icon-download"></i><em class="t">1920x1080</em>
+                        </a>
+                        <a class="ctrl download" href="javascript:void(0);" title="https://bing.com/th?id=OHR.RSOakTree_ZH-CN6371993573_UHD.jpg" onclick="downloadUrlFile(this.title)" id="download">
+                            <i class="icon icon-download"></i><em class="t">UHD</em>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="item">
+                <div class="card progressive">
+                    <img class="progressive__img progressive--not-loaded" data-progressive="https://bing.com/th?id=OHR.GentooLeap_ZH-CN6189428446_800x480.jpg"
+                        src="https://bing.com/th?id=OHR.GentooLeap_ZH-CN6189428446_400x240.jpg" alt="南极丹科岛附近的巴布亚企鹅 (© David Merron/Getty Images)">
+                    <a class="mark" href="/pages/OHR.GentooLeap_ZH-CN6189428446.html"></a>
+                    <div class="description" style="text-align:left">
+                        <h3>南极丹科岛附近的巴布亚企鹅 (© David Merron/Getty Images)</h3>
+                        <p class="calendar"><i class="icon icon-calendar"></i><em class="t">2021-01-21</em></p>
+                    </div>
+                    <div class="options">
+                        <a class="ctrl download" href="javascript:void(0);" title="https://bing.com/th?id=OHR.GentooLeap_ZH-CN6189428446_1920x1080.jpg" onclick="downloadUrlFile(this.title)" id="download">
+                            <i class="icon icon-download"></i><em class="t">1920x1080</em>
+                        </a>
+                        <a class="ctrl download" href="javascript:void(0);" title="https://bing.com/th?id=OHR.GentooLeap_ZH-CN6189428446_UHD.jpg" onclick="downloadUrlFile(this.title)" id="download">
+                            <i class="icon icon-download"></i><em class="t">UHD</em>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="item">
+                <div class="card progressive">
+                    <img class="progressive__img progressive--not-loaded" data-progressive="https://bing.com/th?id=OHR.Calakmul_ZH-CN5969688954_800x480.jpg"
+                        src="https://bing.com/th?id=OHR.Calakmul_ZH-CN5969688954_400x240.jpg" alt="被丛林包围着的玛雅古城卡拉克穆尔遗址，墨西哥坎佩切 (© Alfredo Matus/Shutterstock)">
+                    <a class="mark" href="/pages/OHR.Calakmul_ZH-CN5969688954.html"></a>
+                    <div class="description" style="text-align:left">
+                        <h3>被丛林包围着的玛雅古城卡拉克穆尔遗址，墨西哥坎佩切 (© Alfredo Matus/Shutterstock)</h3>
+                        <p class="calendar"><i class="icon icon-calendar"></i><em class="t">2021-01-20</em></p>
+                    </div>
+                    <div class="options">
+                        <a class="ctrl download" href="javascript:void(0);" title="https://bing.com/th?id=OHR.Calakmul_ZH-CN5969688954_1920x1080.jpg" onclick="downloadUrlFile(this.title)" id="download">
+                            <i class="icon icon-download"></i><em class="t">1920x1080</em>
+                        </a>
+                        <a class="ctrl download" href="javascript:void(0);" title="https://bing.com/th?id=OHR.Calakmul_ZH-CN5969688954_UHD.jpg" onclick="downloadUrlFile(this.title)" id="download">
+                            <i class="icon icon-download"></i><em class="t">UHD</em>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="item">
+                <div class="card progressive">
+                    <img class="progressive__img progressive--not-loaded" data-progressive="https://bing.com/th?id=OHR.FichtelbergWinter_ZH-CN9274877146_800x480.jpg"
+                        src="https://bing.com/th?id=OHR.FichtelbergWinter_ZH-CN9274877146_400x240.jpg" alt="菲希特尔贝格山上的气象站和Fichtelberghaus酒店，德国上维森塔尔 (© Cornelia Dorr/eStock Photo)">
+                    <a class="mark" href="/pages/OHR.FichtelbergWinter_ZH-CN9274877146.html"></a>
+                    <div class="description" style="text-align:left">
+                        <h3>菲希特尔贝格山上的气象站和Fichtelberghaus酒店，德国上维森塔尔 (© Cornelia Dorr/eStock Photo)</h3>
+                        <p class="calendar"><i class="icon icon-calendar"></i><em class="t">2021-01-19</em></p>
+                    </div>
+                    <div class="options">
+                        <a class="ctrl download" href="javascript:void(0);" title="https://bing.com/th?id=OHR.FichtelbergWinter_ZH-CN9274877146_1920x1080.jpg" onclick="downloadUrlFile(this.title)" id="download">
+                            <i class="icon icon-download"></i><em class="t">1920x1080</em>
+                        </a>
+                        <a class="ctrl download" href="javascript:void(0);" title="https://bing.com/th?id=OHR.FichtelbergWinter_ZH-CN9274877146_UHD.jpg" onclick="downloadUrlFile(this.title)" id="download">
+                            <i class="icon icon-download"></i><em class="t">UHD</em>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="item">
+                <div class="card progressive">
+                    <img class="progressive__img progressive--not-loaded" data-progressive="https://bing.com/th?id=OHR.PailonDelDiablo_ZH-CN9146230830_800x480.jpg"
+                        src="https://bing.com/th?id=OHR.PailonDelDiablo_ZH-CN9146230830_400x240.jpg" alt="巴尼奥斯附近的阿格杨瀑布，厄瓜多尔 (© Laura BC/Getty Images)">
+                    <a class="mark" href="/pages/OHR.PailonDelDiablo_ZH-CN9146230830.html"></a>
+                    <div class="description" style="text-align:left">
+                        <h3>巴尼奥斯附近的阿格杨瀑布，厄瓜多尔 (© Laura BC/Getty Images)</h3>
+                        <p class="calendar"><i class="icon icon-calendar"></i><em class="t">2021-01-18</em></p>
+                    </div>
+                    <div class="options">
+                        <a class="ctrl download" href="javascript:void(0);" title="https://bing.com/th?id=OHR.PailonDelDiablo_ZH-CN9146230830_1920x1080.jpg" onclick="downloadUrlFile(this.title)" id="download">
+                            <i class="icon icon-download"></i><em class="t">1920x1080</em>
+                        </a>
+                        <a class="ctrl download" href="javascript:void(0);" title="https://bing.com/th?id=OHR.PailonDelDiablo_ZH-CN9146230830_UHD.jpg" onclick="downloadUrlFile(this.title)" id="download">
+                            <i class="icon icon-download"></i><em class="t">UHD</em>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="item">
+                <div class="card progressive">
+                    <img class="progressive__img progressive--not-loaded" data-progressive="https://bing.com/th?id=OHR.GlassIgloos_ZH-CN8927574757_800x480.jpg"
+                        src="https://bing.com/th?id=OHR.GlassIgloos_ZH-CN8927574757_400x240.jpg" alt="卡克斯劳塔宁阿克蒂克度假酒店的玻璃圆顶冰屋，芬兰萨里山 (© Lingxiao Xie/Getty Images)">
+                    <a class="mark" href="/pages/OHR.GlassIgloos_ZH-CN8927574757.html"></a>
+                    <div class="description" style="text-align:left">
+                        <h3>卡克斯劳塔宁阿克蒂克度假酒店的玻璃圆顶冰屋，芬兰萨里山 (© Lingxiao Xie/Getty Images)</h3>
+                        <p class="calendar"><i class="icon icon-calendar"></i><em class="t">2021-01-17</em></p>
+                    </div>
+                    <div class="options">
+                        <a class="ctrl download" href="javascript:void(0);" title="https://bing.com/th?id=OHR.GlassIgloos_ZH-CN8927574757_1920x1080.jpg" onclick="downloadUrlFile(this.title)" id="download">
+                            <i class="icon icon-download"></i><em class="t">1920x1080</em>
+                        </a>
+                        <a class="ctrl download" href="javascript:void(0);" title="https://bing.com/th?id=OHR.GlassIgloos_ZH-CN8927574757_UHD.jpg" onclick="downloadUrlFile(this.title)" id="download">
+                            <i class="icon icon-download"></i><em class="t">UHD</em>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="item">
+                <div class="card progressive">
+                    <img class="progressive__img progressive--not-loaded" data-progressive="https://bing.com/th?id=OHR.ChateauBeynac_ZH-CN8777586167_800x480.jpg"
+                        src="https://bing.com/th?id=OHR.ChateauBeynac_ZH-CN8777586167_400x240.jpg" alt="俯瞰着多尔多涅河谷的贝纳克城堡，法国 (© Gareth Kirkland/Alamy)">
+                    <a class="mark" href="/pages/OHR.ChateauBeynac_ZH-CN8777586167.html"></a>
+                    <div class="description" style="text-align:left">
+                        <h3>俯瞰着多尔多涅河谷的贝纳克城堡，法国 (© Gareth Kirkland/Alamy)</h3>
+                        <p class="calendar"><i class="icon icon-calendar"></i><em class="t">2021-01-16</em></p>
+                    </div>
+                    <div class="options">
+                        <a class="ctrl download" href="javascript:void(0);" title="https://bing.com/th?id=OHR.ChateauBeynac_ZH-CN8777586167_1920x1080.jpg" onclick="downloadUrlFile(this.title)" id="download">
+                            <i class="icon icon-download"></i><em class="t">1920x1080</em>
+                        </a>
+                        <a class="ctrl download" href="javascript:void(0);" title="https://bing.com/th?id=OHR.ChateauBeynac_ZH-CN8777586167_UHD.jpg" onclick="downloadUrlFile(this.title)" id="download">
+                            <i class="icon icon-download"></i><em class="t">UHD</em>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="item">
+                <div class="card progressive">
+                    <img class="progressive__img progressive--not-loaded" data-progressive="https://bing.com/th?id=OHR.BrightonSnow_ZH-CN0309526170_800x480.jpg"
+                        src="https://bing.com/th?id=OHR.BrightonSnow_ZH-CN0309526170_400x240.jpg" alt="布莱顿-霍夫被雪覆盖的海滩小屋，英国 (© Tim Jones/Alamy)">
+                    <a class="mark" href="/pages/OHR.BrightonSnow_ZH-CN0309526170.html"></a>
+                    <div class="description" style="text-align:left">
+                        <h3>布莱顿-霍夫被雪覆盖的海滩小屋，英国 (© Tim Jones/Alamy)</h3>
+                        <p class="calendar"><i class="icon icon-calendar"></i><em class="t">2021-01-15</em></p>
+                    </div>
+                    <div class="options">
+                        <a class="ctrl download" href="javascript:void(0);" title="https://bing.com/th?id=OHR.BrightonSnow_ZH-CN0309526170_1920x1080.jpg" onclick="downloadUrlFile(this.title)" id="download">
+                            <i class="icon icon-download"></i><em class="t">1920x1080</em>
+                        </a>
+                        <a class="ctrl download" href="javascript:void(0);" title="https://bing.com/th?id=OHR.BrightonSnow_ZH-CN0309526170_UHD.jpg" onclick="downloadUrlFile(this.title)" id="download">
+                            <i class="icon icon-download"></i><em class="t">UHD</em>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="item">
+                <div class="card progressive">
+                    <img class="progressive__img progressive--not-loaded" data-progressive="https://bing.com/th?id=OHR.BolivianSummer_ZH-CN0179997340_800x480.jpg"
+                        src="https://bing.com/th?id=OHR.BolivianSummer_ZH-CN0179997340_400x240.jpg" alt="爱德阿都·阿瓦罗·安第斯国家保护区内的火烈鸟，玻利维亚 (© Art Wolfe/Danita Delimont)">
+                    <a class="mark" href="/pages/OHR.BolivianSummer_ZH-CN0179997340.html"></a>
+                    <div class="description" style="text-align:left">
+                        <h3>爱德阿都·阿瓦罗·安第斯国家保护区内的火烈鸟，玻利维亚 (© Art Wolfe/Danita Delimont)</h3>
+                        <p class="calendar"><i class="icon icon-calendar"></i><em class="t">2021-01-14</em></p>
+                    </div>
+                    <div class="options">
+                        <a class="ctrl download" href="javascript:void(0);" title="https://bing.com/th?id=OHR.BolivianSummer_ZH-CN0179997340_1920x1080.jpg" onclick="downloadUrlFile(this.title)" id="download">
+                            <i class="icon icon-download"></i><em class="t">1920x1080</em>
+                        </a>
+                        <a class="ctrl download" href="javascript:void(0);" title="https://bing.com/th?id=OHR.BolivianSummer_ZH-CN0179997340_UHD.jpg" onclick="downloadUrlFile(this.title)" id="download">
+                            <i class="icon icon-download"></i><em class="t">UHD</em>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="item">
+                <div class="card progressive">
+                    <img class="progressive__img progressive--not-loaded" data-progressive="https://bing.com/th?id=OHR.SeaFort_ZH-CN0457624725_800x480.jpg"
+                        src="https://bing.com/th?id=OHR.SeaFort_ZH-CN0457624725_400x240.jpg" alt="Sindhudurg堡，印度马哈拉施特拉邦 (© MovingMaratha/Alamy)">
+                    <a class="mark" href="/pages/OHR.SeaFort_ZH-CN0457624725.html"></a>
+                    <div class="description" style="text-align:left">
+                        <h3>Sindhudurg堡，印度马哈拉施特拉邦 (© MovingMaratha/Alamy)</h3>
+                        <p class="calendar"><i class="icon icon-calendar"></i><em class="t">2021-01-13</em></p>
+                    </div>
+                    <div class="options">
+                        <a class="ctrl download" href="javascript:void(0);" title="https://bing.com/th?id=OHR.SeaFort_ZH-CN0457624725_1920x1080.jpg" onclick="downloadUrlFile(this.title)" id="download">
+                            <i class="icon icon-download"></i><em class="t">1920x1080</em>
+                        </a>
+                        <a class="ctrl download" href="javascript:void(0);" title="https://bing.com/th?id=OHR.SeaFort_ZH-CN0457624725_UHD.jpg" onclick="downloadUrlFile(this.title)" id="download">
+                            <i class="icon icon-download"></i><em class="t">UHD</em>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="item">
+                <div class="card progressive">
+                    <img class="progressive__img progressive--not-loaded" data-progressive="https://bing.com/th?id=OHR.SierraNevada_ZH-CN0564237735_800x480.jpg"
+                        src="https://bing.com/th?id=OHR.SierraNevada_ZH-CN0564237735_400x240.jpg" alt="Pradollano滑雪站，西班牙内华达山脉国家公园 (© NTCo/iStock/Getty Images Plus)">
+                    <a class="mark" href="/pages/OHR.SierraNevada_ZH-CN0564237735.html"></a>
+                    <div class="description" style="text-align:left">
+                        <h3>Pradollano滑雪站，西班牙内华达山脉国家公园 (© NTCo/iStock/Getty Images Plus)</h3>
+                        <p class="calendar"><i class="icon icon-calendar"></i><em class="t">2021-01-12</em></p>
+                    </div>
+                    <div class="options">
+                        <a class="ctrl download" href="javascript:void(0);" title="https://bing.com/th?id=OHR.SierraNevada_ZH-CN0564237735_1920x1080.jpg" onclick="downloadUrlFile(this.title)" id="download">
+                            <i class="icon icon-download"></i><em class="t">1920x1080</em>
+                        </a>
+                        <a class="ctrl download" href="javascript:void(0);" title="https://bing.com/th?id=OHR.SierraNevada_ZH-CN0564237735_UHD.jpg" onclick="downloadUrlFile(this.title)" id="download">
+                            <i class="icon icon-download"></i><em class="t">UHD</em>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="page"><a href="/p/00000123.html">上一页</a><span> 125 / 195 </span><a href="/p/00000125.html">下一页</a></div>
+
+        <div class="copyright">
+            <p>本站所有图片均来自<a rel="nofollow" href="http://cn.bing.com" target="_blank">必应搜索</a></p>
+            <p>本站累计访问量:<span id="finicount_views"></span></p>
+            <p>Copyright &copy;
+                <a href="https://blog.horrordor.tk/" target="_blank">horrordor</a>
+            </p>
+        </div>
+        
+    </section>
+
+    <script src="https://fastly.jsdelivr.net/gh/horrordor/bing-wallpaper/static/js/loader.js"></script>
+    
+
+    <script>
+        progressively.init({
+            delay: 50,
+            throttle: 300,
+            smBreakpoint: 600,
+            onLoad: function (elem) {
+                console.log(elem);
+            },
+            onLoadComplete: function () {
+                console.log('All images have finished loading!');
+            }
+        });
+    </script>
+    <script async src="//finicounter.eu.org/finicounter.js"></script>
+</body>
+
+</html>
