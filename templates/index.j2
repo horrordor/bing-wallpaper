@@ -26,7 +26,7 @@
 
     <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
     
-    <link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/progressively/1.2.5/progressively.min.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/progressively/1.2.5/progressively.min.css">
     <script src="https://cdn.staticfile.org/progressively/1.2.5/progressively.min.js"></script>
     
     <link rel="stylesheet" href="https://cdn.staticfile.org/weui/2.6.5/style/weui.min.css">
@@ -110,24 +110,24 @@
     {% endif %}
 
     <script type="text/javascript">
-        progressively.init({
-            delay: 50,
-            throttle: 300,
-            smBreakpoint: 600,
-            onLoad: function (elem) {
-                console.log(elem);
-            },
-            onLoadComplete: function () {
-                console.log('All images have finished loading!');
-            }
-        });
-
         var loader = document.querySelector('.loader');
         var main = document.querySelector('.main');
         $(window).ready(
             function () {
                 setTimeout(
                 function () {
+                    progressively.init({
+                        delay: 50,
+                        throttle: 300,
+                        smBreakpoint: 600,
+                        onLoad: function (elem) {
+                            console.log(elem);
+                        },
+                        onLoadComplete: function () {
+                            console.log('All images have finished loading!');
+                        }
+                    });
+                    
                     loader.style.opacity = 0;
                     loader.style.display = 'none';
                     main.style.display = 'block';
