@@ -24,12 +24,13 @@
     <script src="https://fastly.jsdelivr.net/gh/horrordor/bing-wallpaper@gh-pages/static/js/device.js"></script>
     <script src="https://fastly.jsdelivr.net/gh/horrordor/bing-wallpaper@gh-pages/static/js/download.js"></script>
 
-    <script src="https://cdn.staticfile.org/jquery/3.7.0/jquery.slim.min.js"></script>
-    
-    <link rel="stylesheet" href="https://cdn.staticfile.org/progressively/1.2.5/progressively.min.css">
-    <script src="https://cdn.staticfile.org/progressively/1.2.5/progressively.min.js"></script>
-    
+    <script src="https://s4.zstatic.net/ajax/libs/progressively/1.2.5/progressively.min.js"></script>
+    <link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/progressively/1.2.5/progressively.min.css">
+
     <link rel="stylesheet" href="https://cdn.staticfile.org/weui/2.6.5/style/weui.min.css">
+    <script src="https://https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://polyfill.alicdn.com/polyfill.min.js"></script>
+    
 
     <script>
         if (!!window.ActiveXObject || "ActiveXObject" in window) {
@@ -279,32 +280,18 @@
         </div>
         
 
-    <script type="text/javascript">
-        var loader = document.querySelector('.loader');
-        var main = document.querySelector('.main');
-        $(window).ready(
-            function () {
-                setTimeout(
-                function () {
-                    progressively.init({
-                        delay: 50,
-                        throttle: 300,
-                        smBreakpoint: 600,
-                        onLoad: function (elem) {
-                            console.log(elem);
-                        },
-                        onLoadComplete: function () {
-                            console.log('All images have finished loading!');
-                        }
-                    });
-                    
-                    loader.style.opacity = 0;
-                    loader.style.display = 'none';
-                    main.style.display = 'block';
-                    setTimeout(function () { main.style.opacity = 1; }, 50)
-                }, 500)
-            }    
-        );
+    <script>
+        progressively.init({
+            delay: 50,
+            throttle: 300,
+            smBreakpoint: 600,
+            onLoad: function (elem) {
+                console.log(elem);
+            },
+            onLoadComplete: function () {
+                console.log('All images have finished loading!');
+            }
+        });
     </script>
     <script async src="//finicounter.eu.org/finicounter.js"></script>
 </body>
